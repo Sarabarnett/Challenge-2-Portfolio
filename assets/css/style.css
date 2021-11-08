@@ -121,13 +121,15 @@ header nav ul li a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: flex-start
 }
 .example-text {
   background-color: var(--tertiary-color);
   text-align: center;
   line-height: 1.2;
-  width: 15%;
-  margin: 0;
+  width: 25%;
+  margin: 20px;
+  bottom: 30%;
 }
 .example-text h3 {
   color: var(--primary-color);
@@ -140,20 +142,20 @@ header nav ul li a {
   font-weight: lighter;
   color: var(--secondary-color)
 }
-
-.example-img1 img{
+.image1 {
   height: 400px;
   width: 600px;
   border: var(--tertiary-color) 6px solid;
   margin: 20px;
 }
 
-.example-img img {
+.example img {
   height: 300px;
   width: 500px;
   border: var(--tertiary-color) 6px solid;
   margin: 20px;
 }
+
 
 
 /* contact info styling*/ 
@@ -184,3 +186,92 @@ header nav ul li a {
   position:relative;
 }
 
+
+
+/*media query for screens smaller than 980px*/
+@media screen and (max-width: 980px) {
+
+  header {
+    justify-content: center;
+    position: relative;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 36px;
+  }
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+}
+
+/*media query for tablets between 768px and 575px*/
+@media screen and (max-width: 768px) {
+  
+  header h1 {
+    width: 80%;
+    font-size: 30px;
+  }
+
+  .section-title {
+    font-size: 30px;
+    padding: 10px;
+    margin: 5px auto;
+    width: 75%;
+  }
+}
+
+
+/*media query for mobile phones and screen smaller than 575px */
+@media screen and (max-width: 575px) {
+
+  .hero {
+    width: 100%;
+  }
+  .hero-text {
+    margin: 5px;
+  }
+
+  .hero-text h2 {
+    width: 80%;
+    text-align: center;
+    font-size: 26px;
+    padding: 5px;
+  }
+
+  .bio-info {
+    flex: 0 100%;
+    align-content: center;
+  }
+
+  .bio-content p {
+    font-size: 14px;
+  }
+
+  .bio img {
+    width: 155px;
+  }
+
+  .work-examples {
+    flex: 0 100%;
+  }
+
+  .example-text {
+    text-align: center;
+  }
+
+  .example img {
+    height: 175px;
+    width: 350px;
+    margin: 5px;
+  }
+
+}
