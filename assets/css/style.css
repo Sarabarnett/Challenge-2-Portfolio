@@ -82,60 +82,70 @@ header nav ul li a {
   bottom: 40px;
 }
 
-.bio-content {
+/*about section styling*/
+.bio-info {
+  height: auto;
+  width: 100%;
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.bio-content {
+  margin: 20px;
   flex-wrap: wrap;
-  align-items: center;
-  display:inline-block;
-  justify-content: space-between;
 }
 
 .bio img {
-  height: 250px;
-  width: 175px;
+  height: 275px;
+  width: 200px;
   border: var(--tertiary-color) solid 4px;
-  margin: 20px;
-
 }
-.bio p {
+
+.bio-content p {
   font-size: 18px;
   color: var(--primary-color);
   padding: 5px;
-  margin: 10px 50px 10px 500px;
   border: var(--tertiary-color) solid 4px;
-  width: 60%;
-  height: 250px;
-  right: 10%;
-  text-align: left;
+  width: 100%;
+  height: 275px;
   line-height: 1.7;
+  text-align: center;
+  overflow: scroll;
 }
 
-.example {
+/*example work styling*/
+.work-examples {
+  height: auto;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  position: relative;
-  text-align: center;
 }
 .example-text {
   background-color: var(--tertiary-color);
   text-align: center;
   line-height: 1.2;
-  width: 20%;
-  padding: 5px;
-  margin: 5px;
+  width: 15%;
+  margin: 0;
 }
-.example h3 {
+.example-text h3 {
   color: var(--primary-color);
-  font-size: 24px;
-  padding: 5px;
-  margin: 5px;
+  font-size: 20px;
+  padding-bottom: 5px;
 }
 
-.example p {
-  font-size: 18px;
+.example-text p {
+  font-size: 16px;
   font-weight: lighter;
   color: var(--secondary-color)
+}
+
+.example-img1 img{
+  height: 400px;
+  width: 600px;
+  border: var(--tertiary-color) 6px solid;
+  margin: 20px;
 }
 
 .example-img img {
@@ -143,25 +153,34 @@ header nav ul li a {
   width: 500px;
   border: var(--tertiary-color) 6px solid;
   margin: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
 }
+
+
+/* contact info styling*/ 
+.contact-info ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+}
+
+.contact-info li {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--primary-color);
+  padding-bottom: 25px;
+  margin: 20px;
+}
+
+/*utility classes for styling*/
 
 .section-title {
   color:var(--secondary-color);
   font-size: 36px;
   text-align: left;
-  padding: 20px 30px;
+  padding: 20px;
   margin: 10px auto;
+  position:relative;
 }
 
-.flex-row {
-  display: flex;
-}
-
-.bottom-left {
-  position: absolute;
-  bottom: 12px;
-  left: 20px;
-}
