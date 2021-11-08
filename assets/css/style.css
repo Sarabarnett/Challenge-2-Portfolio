@@ -79,27 +79,71 @@ header nav ul li a {
   font-size: 30px;
   border-bottom: #4A8657 solid 3px;
   text-align: right;
-  right: 10%;
-  top: 80%;
+  right: 60px;
+  bottom: 40px;
 }
 
+.bio-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  display:inline-block;
+  justify-content: space-between;
+}
+
+.bio img {
+  height: 250px;
+  width: 175px;
+  border: var(--tertiary-color) solid 4px;
+  margin: 20px;
+
+}
 .bio p {
   font-size: 18px;
   color: var(--primary-color);
   padding: 5px;
   margin: 10px 50px 10px 500px;
-  border: var(--tertiary-color) solid 3px;
+  border: var(--tertiary-color) solid 4px;
   width: 60%;
-  height: 230px;
+  height: 250px;
   right: 10%;
   text-align: left;
   line-height: 1.7;
 }
+
+.example {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+  text-align: center;
+}
+.example-text {
+  background-color: var(--tertiary-color);
+  text-align: center;
+  line-height: 1.2;
+  width: 20%;
+  padding: 5px;
+  margin: 5px;
+}
 .example h3 {
   color: var(--primary-color);
   font-size: 24px;
-  padding: 10px;
-  margin: 10px 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.example p {
+  font-size: 18px;
+  font-weight: lighter;
+  color: var(--secondary-color)
+}
+
+.example-img img {
+  height: 300px;
+  width: 500px;
+  border: var(--tertiary-color) 6px solid;
+  margin: 20px;
 }
 
 .section-title {
@@ -108,4 +152,14 @@ header nav ul li a {
   text-align: left;
   padding: 20px 30px;
   margin: 10px auto;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 12px;
+  left: 20px;
 }
