@@ -77,12 +77,24 @@ header nav ul li a {
   color: #fff;
   position: absolute;
   font-size: 30px;
-  border-bottom: #4A8657 solid 2px;
+  border-bottom: #4A8657 solid 3px;
   text-align: right;
   right: 10%;
   top: 80%;
 }
 
+.bio p {
+  font-size: 18px;
+  color: var(--primary-color);
+  padding: 5px;
+  margin: 10px 50px 10px 500px;
+  border: var(--tertiary-color) solid 3px;
+  width: 60%;
+  height: 230px;
+  right: 10%;
+  text-align: left;
+  line-height: 1.7;
+}
 .example h3 {
   color: var(--primary-color);
   font-size: 24px;
@@ -94,6 +106,6 @@ header nav ul li a {
   color:var(--secondary-color);
   font-size: 36px;
   text-align: left;
-  padding: 10px 5px;
+  padding: 20px 30px;
   margin: 10px auto;
 }
