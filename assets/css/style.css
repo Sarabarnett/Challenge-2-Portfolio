@@ -123,40 +123,50 @@ header nav ul li a {
   justify-content: space-around;
   align-items: flex-start
 }
+
+.example-text h3 {
+  color: var(--primary-color);
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+
+.example-text p {
+  font-size: 14px;
+  font-weight: lighter;
+  color: var(--secondary-color)
+}
+
 .example-text {
   background-color: var(--tertiary-color);
   text-align: center;
   line-height: 1.2;
   width: 25%;
-  margin: 20px;
-  bottom: 30%;
-}
-.example-text h3 {
-  color: var(--primary-color);
-  font-size: 20px;
-  padding-bottom: 5px;
+  margin-left: 20px;
+  position: absolute;
+  z-index: 999;
+  left: 0;
+  right: 0;
+  top: 55%;
 }
 
-.example-text p {
-  font-size: 16px;
-  font-weight: lighter;
-  color: var(--secondary-color)
+.example-img1, .example-img {
+  position: relative;
+  display: inline-block;
 }
-.image1 {
+
+.example-img1 img {
   height: 400px;
   width: 600px;
   border: var(--tertiary-color) 6px solid;
   margin: 20px;
 }
 
-.example img {
+.example-img img {
   height: 300px;
   width: 500px;
   border: var(--tertiary-color) 6px solid;
   margin: 20px;
 }
-
-
 
 /* contact info styling*/ 
 .contact-info ul {
