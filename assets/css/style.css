@@ -130,13 +130,14 @@ header nav ul li a {
 .example-text h3 {
   color: var(--primary-color);
   font-size: 18px;
-  padding-bottom: 5px;
+  padding-bottom: 3px;
 }
 
 .example-text p {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: lighter;
-  color: var(--secondary-color)
+  color: var(--secondary-color);
+  padding: 3px;
 }
 
 .example-text {
